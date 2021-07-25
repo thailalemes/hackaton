@@ -11,6 +11,23 @@ const Separator = () => (
 );
 
 export default function Choose() {
+    const navigation = useNavigation();
+
+    function navigateToWelcome() {
+        navigation.navigate('Welcome');
+    }
+
+    function navigateToInitTrip() {
+        navigation.navigate('initTrip');
+    }
+
+    function navigateToInitTax() {
+        navigation.navigate('initTax');
+    }
+
+    function navigateToWelcome() {
+        navigation.navigate('Welcome');
+    }
 
     const [visivel,setVisivel]=useState(false)
 
@@ -22,43 +39,44 @@ export default function Choose() {
         </View>
             <Separator />
                 <Modal 
-                animationType={'slide'}
                 style={styles.modal1}
                 visible={visivel}
-                transparent={true}
                 title='modal1'>
                     <View>
                     <Text style={styles.alert1}>Você tem certeza que quer se cadastrar como Transportador?</Text>
                     </View>
-                    <TouchableOpacity style={[styles.button, { backgroundColor: '#29ae19'}]}>
-                        <Text>Sim</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.button, { backgroundColor: '#FF0000'}]}>
-                        <Text>Não</Text>
-                    </TouchableOpacity>
+                    <Button
+                    style={styles.button1}
+                    title="Sim"
+                    onPress={navigateToInitTrip} />
+                    <Button 
+                    title="Não"
+                    onPress={navigateToWelcome} />
                 </Modal>
                 <Modal 
                 style={styles.modal2}
-                visible={visivel}>
+                visible={false}
+                transparent={true}>
                     <View>
                     <Text style={styles.alert2}>Você tem certeza que quer se cadastrar como Fretador?</Text>
                     </View>
-                    <TouchableOpacity style={[styles.button, { backgroundColor: '#29ae19'}]}>
-                        <Text>Sim</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.button, { backgroundColor: '#FF0000'}]}>
-                        <Text>Não</Text>
-                    </TouchableOpacity>
+                    <Button 
+                    style={styles.button2}
+                    title="Sim"
+                    onPress={navigateToInitTax} />
+                    <Button 
+                    title="Não"
+                    onPress={navigateToWelcome} />
                 </Modal>
                 <View style={styles.actions}>
                                 <TouchableOpacity 
                                     style={styles.action} 
-                                    onPress={() => {modal1.setVisivel(true)}}>
+                                    onPress={() => {setVisivel(true)}}>
                                     <Text style={styles.actionTrans}>Transportador</Text>
                                 </TouchableOpacity>
                                     <TouchableOpacity 
                                         style={styles.action} 
-                                        onPress={() => {modal2.setVisivel(true)}}>
+                                        onPress={() => {setVisivel(true)}}>
                                         <Text style={styles.actionTax}>Fretador</Text>
                                     </TouchableOpacity>
                 </View>

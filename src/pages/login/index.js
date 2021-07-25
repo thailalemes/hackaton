@@ -11,6 +11,12 @@ const Separator = () => (
 
 
 export default function Login() {
+    const navigation = useNavigation();
+
+    function navigateToinitTrip() {
+        navigation.navigate('initTrip');
+    }
+
     const [text, onChangeText] = React.useState("");
     const [number, onChangeNumber] = React.useState(null);
 
@@ -30,9 +36,11 @@ export default function Login() {
                 />
                 <TextInput
                     style={styles.input}
-                    value={text}
+                    autoCompleteType="password"
                     onChangeText={onChangeText}
                     placeholder="Senha"
+                    autoCapitalize="none"
+                    textContentType="password"
                     secureTextEntry={true}
                 />
                 <Separator />
@@ -44,7 +52,7 @@ export default function Login() {
                     </TouchableOpacity>
                     </View>
              <View style={styles.actions}>
-                <TouchableOpacity style={styles.action} onPress={() => {}}>
+                <TouchableOpacity style={styles.action} onPress={navigateToinitTrip}>
                     <Text style={styles.actionLogin}>Login</Text>
                 </TouchableOpacity>
             </View>

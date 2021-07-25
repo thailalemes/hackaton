@@ -30,16 +30,6 @@ export default StyleSheet.create({
         color: '#429BEC',
     },
 
-    description: {
-        top: 452,
-        left: 40,
-        color: '#64748B',
-        fontSize: 16,
-        textAlign: 'left',
-        width: 261,
-        height: 48,
-    },
-
    actions: {
         zIndex: -1,
         flexDirection: 'column',
@@ -63,6 +53,14 @@ export default StyleSheet.create({
         top: 282,
         backgroundColor: '#ffff',
         borderRadius: 20,
+    },
+
+    button1:{
+        backgroundColor: '#29ae19',
+    },
+
+    button2:{
+        backgroundColor: '#29ae19',
     },
 
     actionTrans:{
