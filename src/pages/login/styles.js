@@ -24,7 +24,6 @@ export default StyleSheet.create({
     },
 
     actionLogin: {
-        zIndex: 1,
         width: 296,
         height: 56.47,
         top: 450,

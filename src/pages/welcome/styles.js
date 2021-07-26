@@ -49,6 +49,7 @@ export default StyleSheet.create({
 
     actionRegistry:{
         backgroundColor: '#F6F8FC',
+    
            width: 250,
            left: -40,
            height: 56.47,
@@ -61,6 +62,7 @@ export default StyleSheet.create({
        }, 
 
     actionLogin: {
+        zIndex: 1,
         width: 174.24,
         height: 56.47,
         left: 50,

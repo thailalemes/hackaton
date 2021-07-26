@@ -55,10 +55,11 @@ export default StyleSheet.create({
     },
 
 
-    input1: {
+    input: {
+      height: 60,
         width: 335,
         left: 20,
-        top: 141,
+        margin: 12,
         backgroundColor: '#F6F8FC',
         borderRadius: 10,
         paddingLeft: 10,
@@ -82,7 +83,7 @@ export default StyleSheet.create({
         backgroundColor: '#F6F8FC',
         borderRadius: 10,
         paddingLeft: 10,
-      },
+      }, 
 
       actions: {
         zIndex: -1,

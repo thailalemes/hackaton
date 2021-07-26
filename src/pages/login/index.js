@@ -43,7 +43,7 @@ export default function Login() {
                     textContentType="password"
                     secureTextEntry={true}
                 />
-                <Separator />
+                <Separator /> 
                     <TouchableOpacity 
                     style={styles.forgotPassword} 
                     onPress={() => {}}

@@ -39,9 +39,7 @@ export default StyleSheet.create({
 
     modal1: {
         width: 295,
-        height: 272,
         left: 40,
-        top: 282,
         backgroundColor: '#ffff',
         borderRadius: 20,
     },

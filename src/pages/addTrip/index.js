@@ -23,25 +23,26 @@ export default function addTrip() {
 
     return(
         <View style={styles.container}>
-        <View style={styles.header}>
-            <TouchableOpacity onPress={navigateToinitTrip}>
-            <Feather name="arrow-left" size={32} color="#050049" />
-            </TouchableOpacity>
+            <View style={styles.header}>
+                <TouchableOpacity onPress={navigateToinitTrip}>
+                <Feather name="arrow-left" size={32} color="#050049" />
+                </TouchableOpacity>
 
-            <Text style={styles.title}>Adicionar Viagem</Text>
-        </View>
+                <Text style={styles.title}>Adicionar Viagem</Text>
+            </View>
+
         <View style={styles.body}>
             <Text style={styles.destiny}>Adicionar destino
                         <TextInput
-                                    style={styles.input1}
+                                    style={styles.input}
                                     value={text}
                                     placeholder="Adicione o destino"
                                     onChangeText={onChangeText}
                                 />
                             </Text>
-                            <Text style={styles.weight}>Peso Máximo do caminhão
+                             <Text style={styles.weight}>Peso Máximo do caminhão
                         <TextInput
-                                    style={styles.input2}
+                                    style={styles.input}
                                     value={text}
                                     placeholder="Ex.: 2000kg"
                                     onChangeNumber={onChangeNumber}
@@ -49,17 +50,18 @@ export default function addTrip() {
                             </Text>
                             <Text style={styles.type}>Tipo do caminhão
                         <TextInput
-                                    style={styles.input3}
+                                    style={styles.input}
                                     value={text}
                                     placeholder="Digite aqui o tipo do caminhão"
                                     onChangeNumber={onChangeNumber}
                                 />
                             </Text>
                         </View>
-                        <View style={styles.actions}>
-                <TouchableOpacity style={styles.action} onPress={() => {}}>
-                    <Text style={styles.actionTrip}>Publicar Viagem</Text>
-                </TouchableOpacity>
+
+                <View style={styles.actions}>
+                    <TouchableOpacity style={styles.action} onPress={() => {}}>
+                        <Text style={styles.actionTrip}>Publicar Viagem</Text>
+                    </TouchableOpacity>
             </View>
             </View>
     );
