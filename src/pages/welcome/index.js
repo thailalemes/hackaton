@@ -29,8 +29,7 @@ export default function Welcome() {
             </View>
             <View style={styles.body}>
                 <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
-                        <Text style={styles.title}>Bem vindo ao <Text style={styles.titleBold}>Optmi!</Text>
-                        </Text>
+                        <Text style={styles.titleBold}>Bem vindo!</Text>
                         <Text style={styles.description}>is simply dummy text of the printing and typesetting industry. Lorem
                         </Text>
                     </ImageBackground>
@@ -41,7 +40,7 @@ export default function Welcome() {
                             <Text style={styles.actionLogin}>Login</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.action} onPress={navigateToRegistry}>
-                            <Text style={styles.actionRegistry}>Registre-se</Text>
+                            <Text style={styles.actionRegistry}>Cadastro</Text>
                         </TouchableOpacity>
                     </View> 
         </View>

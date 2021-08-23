@@ -14,7 +14,7 @@ export default StyleSheet.create({
         width: 81,
         height: 51,
         top: 50,
-        color: '#050049',
+        color: '#415703',
     },
 
     action: {
@@ -28,7 +28,7 @@ export default StyleSheet.create({
         height: 56.47,
         top: 450,
         borderRadius: 100,
-        backgroundColor: '#429BEC',
+        backgroundColor: '#84B201',
         textAlign: 'center',
         fontSize: 16,
         color: '#ffff',
@@ -48,10 +48,11 @@ export default StyleSheet.create({
       },
 
       forgotPasswordText: {
-          color: '#050049',
+          color: '#415703',
           width: 141,
           height: 25,
           left: 218,
           top: 155,
+          fontWeight: 'bold',
       }
 })

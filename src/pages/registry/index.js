@@ -21,15 +21,45 @@ export default function Registry() {
     return(
         <View style={styles.container}>
         <View style={styles.header}>
-            <Text style={styles.title}>Registrar-se</Text>
+            <Text style={styles.title}>Cadastro</Text>
         </View>
                     <View style={styles.body}>
+                                <TextInput
+                                style={styles.input}
+                                value={text}
+                                placeholder="Nome"
+                                autoCorrect={false}
+                                onChangeText={onChangeText}
+                                keyboardType="default"
+                                />
                                 <TextInput
                                 style={styles.input}
                                 value={number}
                                 placeholder="CPF"
                                 onChangeNumber={onChangeNumber}
                                 keyboardType="numeric"
+                            />
+                             <TextInput
+                                style={styles.input}
+                                value={text}
+                                placeholder="E-mail"
+                                autoCorrect={false}
+                                onChangeText={onChangeText}
+                                keyboardType="email-address"
+                            />
+                             <TextInput
+                                style={styles.input}
+                                value={number}
+                                placeholder="Telefone"
+                                onChangeNumber={onChangeNumber}
+                                keyboardType="phone-pad"
+                            />
+                             <TextInput
+                                style={styles.input}
+                                value={text}
+                                placeholder="Endereço"
+                                autoCorrect={false}
+                                onChangeText={onChangeText}
                             />
                             <TextInput
                                 style={styles.input}
@@ -53,7 +83,7 @@ export default function Registry() {
                 <Separator />
                         <View style={styles.actions}>
                             <TouchableOpacity style={styles.buttonRegister} onPress={navigateToChoose}>
-                                <Text style={styles.registerText}>Registrar-se</Text>
+                                <Text style={styles.registerText}>Cadastro</Text>
                             </TouchableOpacity>
                         </View>
     </View>

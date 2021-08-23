@@ -16,11 +16,19 @@ export default function initTrip() {
     function navigateToaddTrip() {
         navigation.navigate('addTrip');
     }
+    
+    const [text, onChangeText] = React.useState("");
+    const [number, onChangeNumber] = React.useState(null);
 
     return(
         <View style={styles.container}>
         <View style={styles.header}>
-            <Text style={styles.title}>Você não tem viagens ativas</Text>
+                        <TextInput
+                            style={styles.input}
+                            value={text}
+                            placeholder="Onde você está?"
+                            onChangeText={onChangeText}
+                                    />
         </View>
         <Text style={styles.description}>Clique no botão abaixo e inicie agora mesmo a sua viagem
                         </Text>

@@ -35,13 +35,13 @@ export default function Login() {
                     keyboardType="numeric"
                 />
                 <TextInput
-                    style={styles.input}
-                    autoCompleteType="password"
-                    onChangeText={onChangeText}
-                    placeholder="Senha"
-                    autoCapitalize="none"
-                    textContentType="password"
-                    secureTextEntry={true}
+                   style={styles.input}
+                   autoCompleteType="password"
+                   onChangeText={onChangeText}
+                   placeholder="Senha"
+                   autoCapitalize="none"
+                   textContentType="password"
+                   secureTextEntry={true}
                 />
                 <Separator /> 
                     <TouchableOpacity 

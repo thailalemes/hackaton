@@ -14,7 +14,8 @@ export default StyleSheet.create({
         width: 184,
         height: 51,
         top: 50,
-        color: '#050049',
+        left: 30,
+        color: '#415703',
     },
 
     action: {
@@ -27,10 +28,10 @@ export default StyleSheet.create({
         zIndex: 1,
         width: 296,
         height: 56.47,
-        top: 420,
+        top: 220,
         alignSelf: 'center',
         borderRadius: 100,
-        backgroundColor: '#429BEC',
+        backgroundColor: '#84B201',
       },
 
       registerText:{
@@ -44,8 +45,8 @@ export default StyleSheet.create({
       input: {
         height: 40,
         width: 320,
-        left: 20,
-        top: 150,
+        left: 30,
+        top: 90,
         margin: 12,
         paddingLeft: 10,
         borderBottomColor: '#CBD4E1',
