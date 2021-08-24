@@ -1,7 +1,7 @@
-<h1 align="center">Projeto Optmi!</h1>
+<h1 align="center">Projeto TCC-2021</h1>
 
 ## Descrição do Projeto
-<p align="center">Trata-se de um aplicativo de interligação entre Fretador e Transportador(caminhoneiro).</p>
+<p align="center">Trata-se de um aplicativo de agendamento de coleta de lixo.</p>
 
 <h1 align="center">
     <a href="https:https://reactnative.dev/">🔗 React Native</a>
@@ -22,15 +22,16 @@ Tabela de conteúdos
 <!--te-->
 
 <h4 align="center"> 
-	🚧 Optmi! 🚀 Em construção...  🚧
+	🚧 🚀 Em construção...  🚧
 </h4>
 
 ### Features
 
 - [x] Cadastro de usuário
-- [x] Cadastro de rota
-- [ ] Localização de carga
-- [ ] Localização de Transportador 
+- [x] Login de usuário
+- [x] Agendamento de coleta
+- [x] Cadastro de ocorrência
+- [ ] Cadastro de rota
 
 ### Pré-requisitos
 
